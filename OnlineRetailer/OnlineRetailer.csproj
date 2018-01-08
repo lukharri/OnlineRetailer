@@ -170,9 +170,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Entities\Watch.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -182,12 +184,45 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Watches\Casio\GShock.jpg" />
+    <Content Include="Content\Images\Watches\Casio\Poptone.jpg" />
+    <Content Include="Content\Images\Watches\Casio\ProTrek.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\Arena.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\Artisan.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\Captain.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\Fortitudo.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\GenesisPrime.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\GenesisVision.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\GenesisWorld.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\KingChronograph.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\MasterGhost.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarakos\SpiritAuto.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\Anatomic.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\Aviator.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\AviatorAutomatic.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\Bolt.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\Character.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\CoalitionForces.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\Corduba.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\Excursion.jpg" />
+    <Content Include="Content\Images\Watches\Invicta\Force.jpg" />
+    <Content Include="Content\Images\Watches\Suunto\Ambit3.jpg" />
+    <Content Include="Content\Images\Watches\Suunto\Ambit3Vertical.jpg" />
+    <Content Include="Content\Images\Watches\Suunto\Core.jpg" />
+    <Content Include="Content\Images\Watches\Suunto\CoreAlu.jpg" />
+    <Content Include="Content\Images\Watches\Suunto\Essential.jpg" />
+    <Content Include="Content\Images\Watches\Suunto\SpartanSport.jpg" />
+    <Content Include="Content\Images\Watches\Suunto\SpartanWinder.jpg" />
+    <Content Include="Content\Images\Watches\Suunto\ElementumTerra.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\OnlineRetailer2018 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\OnlineRetailer2018 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\OnlineRetailer2018.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -237,6 +272,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\General\" />
+    <Folder Include="Content\Images\Watches\Movado\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

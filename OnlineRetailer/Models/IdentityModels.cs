@@ -3,6 +3,8 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using OnlineRetailer.Entities;
+using System.Collections.Generic;
 
 namespace OnlineRetailer.Models
 {
@@ -29,5 +31,8 @@ namespace OnlineRetailer.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Watch> Watches { get; set; }
     }
+
 }
