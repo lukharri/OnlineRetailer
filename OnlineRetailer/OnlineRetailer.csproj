@@ -175,6 +175,7 @@
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Feature.cs" />
     <Compile Include="Entities\Item.cs" />
+    <Compile Include="Entities\ItemFeature.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
