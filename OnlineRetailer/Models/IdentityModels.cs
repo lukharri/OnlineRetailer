@@ -32,7 +32,8 @@ namespace OnlineRetailer.Models
             return new ApplicationDbContext();
         }
 
-        public DbSet<Watch> Watches { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 
 }

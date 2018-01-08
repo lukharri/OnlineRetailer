@@ -171,7 +171,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Entities\Watch.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Item.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -221,6 +222,7 @@
     <Content Include="Content\Images\Watches\Suunto\SpartanSport.jpg" />
     <Content Include="Content\Images\Watches\Suunto\SpartanWinder.jpg" />
     <Content Include="Content\Images\Watches\Suunto\ElementumTerra.jpg" />
+    <Content Include="Content\Login.css" />
     <Content Include="Content\Navbar.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
