@@ -184,6 +184,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\General\Banner.jpg" />
+    <Content Include="Content\Images\General\EliniBannerSmall.jpg" />
+    <Content Include="Content\Images\General\InvictaBannerSmall.jpg" />
+    <Content Include="Content\Images\General\Logo.png" />
+    <Content Include="Content\Images\General\LPBannerSmall.jpg" />
+    <Content Include="Content\Images\General\SLBannerSmall.jpg" />
     <Content Include="Content\Images\Watches\Casio\GShock.jpg" />
     <Content Include="Content\Images\Watches\Casio\Poptone.jpg" />
     <Content Include="Content\Images\Watches\Casio\ProTrek.jpg" />
@@ -214,6 +220,7 @@
     <Content Include="Content\Images\Watches\Suunto\SpartanSport.jpg" />
     <Content Include="Content\Images\Watches\Suunto\SpartanWinder.jpg" />
     <Content Include="Content\Images\Watches\Suunto\ElementumTerra.jpg" />
+    <Content Include="Content\Navbar.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -272,7 +279,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\General\" />
     <Folder Include="Content\Images\Watches\Movado\" />
   </ItemGroup>
   <ItemGroup>

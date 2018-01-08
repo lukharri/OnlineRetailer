@@ -1,0 +1,9 @@
+﻿body { 
+}
+
+.navbar { background-color: white; }
+.navbar-inverse .navbar-nav > li > a { color: black; }
+.navbar-inverse .navbar-nav > li > a:hover { color: #b70000; }
+.sale-alert { background: #b70000; color: white; font-weight: bold; text-align: center; padding: 10px;
+              width: 1420px; height: 40px;
+}

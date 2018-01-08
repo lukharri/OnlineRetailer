@@ -17,17 +17,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="Home/Index">
+                    <img class="home-logo" src="~/Content/Images/General/Logo.png" />
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("MEN'S WATCHES", "MensWatches", "Home")</li>
+                    <li>@Html.ActionLink("WOMEN'S WATCHES", "WomensWatches", "Home")</li>
+                    <li>@Html.ActionLink("SHOP BY BRAND", "Brands", "Home")</li>
+                    <li>@Html.ActionLink("HANDBAGS", "Handbags", "Home")</li>
+                    <li>@Html.ActionLink("SUNGLASSES", "Sunglasses", "Home")</li>
+                    <li>@Html.ActionLink("ALL CATEGORIES", "Categories", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
+        <div class="sale-alert">Our RED ALERT Sale Is Live Now! PLUS, Get Free U.S. Shipping with promo code "WOWSHIP"!</div>
     </div>
     <div class="container body-content">
         @RenderBody()
