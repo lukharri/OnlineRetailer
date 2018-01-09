@@ -172,6 +172,7 @@
     <Compile Include="Areas\Admin\Controllers\CustomerController.cs" />
     <Compile Include="Areas\Admin\Controllers\FeatureController.cs" />
     <Compile Include="Areas\Admin\Controllers\ItemController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManufacturerController.cs" />
     <Compile Include="Areas\Admin\Models\SmallButtonModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -305,6 +306,11 @@
     <Content Include="Areas\Admin\Views\Customer\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Customer\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Customer\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Index.cshtml" />
     <None Include="Properties\PublishProfiles\OnlineRetailer2018 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\OnlineRetailer2018 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\OnlineRetailer2018.pubxml" />

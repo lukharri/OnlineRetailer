@@ -1,0 +1,32 @@
+﻿@model IEnumerable<OnlineRetailer.Entities.Feature>
+
+@using OnlineRetailer.Areas.Admin.Models;
+
+@{
+    ViewBag.Title = "WoW | Admin";
+}
+
+<h3>Features</h3>
+
+<p>
+    @Html.Partial("_CreateButtonPartial", "Create")
+</p>
+<table class="table table-condensed table-striped">
+    <tr class="success">
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+            @Html.Partial("_TableButtonsPartial", new SmallButtonModel { Id = item.Id })
+    </tr>
+}
+
+</table>
