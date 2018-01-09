@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CustomerController.cs" />
     <Compile Include="Areas\Admin\Controllers\FeatureController.cs" />
     <Compile Include="Areas\Admin\Controllers\ItemController.cs" />
     <Compile Include="Areas\Admin\Models\SmallButtonModel.cs" />
@@ -258,6 +259,11 @@
     <Content Include="Areas\Admin\Views\Feature\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Feature\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Feature\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Index.cshtml" />
     <None Include="Properties\PublishProfiles\OnlineRetailer2018 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\OnlineRetailer2018 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\OnlineRetailer2018.pubxml" />
