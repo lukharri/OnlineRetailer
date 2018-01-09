@@ -44,6 +44,7 @@ namespace OnlineRetailer.Models
         public DbSet<Feature> Features { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<ItemFeature> ItemFeatures { get; set; }
+        public DbSet<Manufacturer> Manufacturers { get; set; }
     }
 
 }

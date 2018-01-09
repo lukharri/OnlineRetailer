@@ -14,7 +14,7 @@ namespace OnlineRetailer.Entities
         public int Id { get; set; }
 
         [Required]
-        public string Manufacturer { get; set; }
+        public int ManufacturerId { get; set; }
 
         [Required]
         [DisplayName("Model Number")]
@@ -39,7 +39,7 @@ namespace OnlineRetailer.Entities
         public string ImageURL { get; set; }
 
         [Required]
-        [DisplayName("Category Id")]
+        [DisplayName("Category")]
         public int CategoryId { get; set; }
 
         [Required]
