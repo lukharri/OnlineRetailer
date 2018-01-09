@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<OnlineRetailer.Entities.Item>
 
+@using OnlineRetailer.Areas.Admin.Models;
+
 @{
     ViewBag.Title = "Wow | Admin";
 }
@@ -82,14 +84,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.InStock)
         </td>
-        <td>
-            @*@Html.Partial("_EditButtonPartial")
-            @Html.Partial("_DetailsButtonPartial")
-            @Html.Partial("_DeleteButtonPartial")*@
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
+            @Html.Partial("_TableButtonsPartial", new SmallButtonModel { Id = item.Id })
     </tr>
 }
 
