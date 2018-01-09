@@ -1,21 +1,38 @@
-﻿@model OnlineRetailer.Entities.Category
+﻿@model OnlineRetailer.Entities.Customer
 
 @{
     ViewBag.Title = "WoW | Admin";
 }
 
-<h3>Delete Item</h3>
+<h3>Delete Customer</h3>
 
 <h4>Are you sure you want to delete this?</h4>
 <div>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.FirstName)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Password)
         </dd>
 
     </dl>
