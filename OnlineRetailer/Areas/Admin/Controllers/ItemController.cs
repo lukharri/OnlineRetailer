@@ -44,7 +44,8 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         {
             var model = new Item
             {
-                Manufacturers = db.Manufacturers.ToList()
+                Manufacturers = db.Manufacturers.ToList(),
+                Categories = db.Categories.ToList()
             };
             return View(model);
         }

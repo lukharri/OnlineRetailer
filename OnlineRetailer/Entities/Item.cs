@@ -17,7 +17,7 @@ namespace OnlineRetailer.Entities
         [DisplayName("Manufacturer")]
         public int ManufacturerId { get; set; }
 
-        [DisplayName("Manufactrers")]
+        [DisplayName("Manufactrer")]
         public ICollection<Manufacturer> Manufacturers { get; set; }
 
         [Required]
@@ -45,6 +45,9 @@ namespace OnlineRetailer.Entities
         [Required]
         [DisplayName("Category")]
         public int CategoryId { get; set; }
+
+        [DisplayName("Category")]
+        public ICollection<Category> Categories { get; set; }
 
         [Required]
         [DisplayName("List Price")]
