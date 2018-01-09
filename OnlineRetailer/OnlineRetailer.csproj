@@ -201,6 +201,38 @@
     <Content Include="Content\Images\General\Logo.png" />
     <Content Include="Content\Images\General\LPBannerSmall.jpg" />
     <Content Include="Content\Images\General\SLBannerSmall.jpg" />
+    <Content Include="Content\Images\Handbags\Burberry\Abingdon.jpg" />
+    <Content Include="Content\Images\Handbags\Burberry\BannerBeast.jpg" />
+    <Content Include="Content\Images\Handbags\Burberry\CoachSophia.jpg" />
+    <Content Include="Content\Images\Handbags\Burberry\CoinPurse.jpg" />
+    <Content Include="Content\Images\Handbags\Burberry\CosmeticPouch.jpg" />
+    <Content Include="Content\Images\Handbags\Burberry\Elmore.jpg" />
+    <Content Include="Content\Images\Handbags\Burberry\MiniBuckle.jpg" />
+    <Content Include="Content\Images\Handbags\Burberry\Wristlet.jpg" />
+    <Content Include="Content\Images\Handbags\EmilioPucci\Firenze.jpg" />
+    <Content Include="Content\Images\Handbags\EmilioPucci\Shoulder.jpg" />
+    <Content Include="Content\Images\Handbags\Ferragamo\Firenze.jpg" />
+    <Content Include="Content\Images\Handbags\KateSpade\Seaside.jpg" />
+    <Content Include="Content\Images\Handbags\KateSpade\Veranda.jpg" />
+    <Content Include="Content\Images\Handbags\RoyceLeather\ExecutiveTote.jpg" />
+    <Content Include="Content\Images\Sunglasses\ArmaniExchange\Unisex1.jpg" />
+    <Content Include="Content\Images\Sunglasses\ArmaniExchange\Unisex2.jpg" />
+    <Content Include="Content\Images\Sunglasses\ArmaniExchange\Unisex3.jpg" />
+    <Content Include="Content\Images\Sunglasses\ArmaniExchange\Unisex4.jpg" />
+    <Content Include="Content\Images\Sunglasses\Gucci\Gold.jpg" />
+    <Content Include="Content\Images\Sunglasses\Gucci\Havana.jpg" />
+    <Content Include="Content\Images\Sunglasses\Gucci\Red.jpg" />
+    <Content Include="Content\Images\Sunglasses\Gucci\White.jpg" />
+    <Content Include="Content\Images\Sunglasses\Prada\LineaRossa.jpg" />
+    <Content Include="Content\Images\Sunglasses\Prada\OpalAvio.jpg" />
+    <Content Include="Content\Images\Sunglasses\Prada\PaleGold.jpg" />
+    <Content Include="Content\Images\Sunglasses\Prada\Sheaves.jpg" />
+    <Content Include="Content\Images\Sunglasses\Prada\Tortoise.jpg" />
+    <Content Include="Content\Images\Sunglasses\RayBan\Alex.jpg" />
+    <Content Include="Content\Images\Sunglasses\RayBan\Andy.jpg" />
+    <Content Include="Content\Images\Sunglasses\RayBan\Clubmaster.jpg" />
+    <Content Include="Content\Images\Sunglasses\RayBan\Cockpit.jpg" />
+    <Content Include="Content\Images\Sunglasses\RayBan\Gatsby1.jpg" />
     <Content Include="Content\Images\Watches\Casio\GShock.jpg" />
     <Content Include="Content\Images\Watches\Casio\Poptone.jpg" />
     <Content Include="Content\Images\Watches\Casio\ProTrek.jpg" />
@@ -223,6 +255,12 @@
     <Content Include="Content\Images\Watches\Invicta\Corduba.jpg" />
     <Content Include="Content\Images\Watches\Invicta\Excursion.jpg" />
     <Content Include="Content\Images\Watches\Invicta\Force.jpg" />
+    <Content Include="Content\Images\Watches\Movado\1881.jpg" />
+    <Content Include="Content\Images\Watches\Movado\BoldBlack.jpg" />
+    <Content Include="Content\Images\Watches\Movado\BoldBrown.jpg" />
+    <Content Include="Content\Images\Watches\Movado\BoldLeather.jpg" />
+    <Content Include="Content\Images\Watches\Movado\Circa.jpg" />
+    <Content Include="Content\Images\Watches\Movado\Defio.jpg" />
     <Content Include="Content\Images\Watches\Suunto\Ambit3.jpg" />
     <Content Include="Content\Images\Watches\Suunto\Ambit3Vertical.jpg" />
     <Content Include="Content\Images\Watches\Suunto\Core.jpg" />
@@ -324,7 +362,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\Watches\Movado\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
