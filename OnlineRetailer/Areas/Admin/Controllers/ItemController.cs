@@ -42,7 +42,11 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         // GET: Admin/Item/Create
         public ActionResult Create()
         {
-            return View();
+            var model = new Item
+            {
+                Manufacturers = db.Manufacturers.ToList()
+            };
+            return View(model);
         }
 
 

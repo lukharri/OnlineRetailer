@@ -14,7 +14,7 @@
 <table class="table table-condensed table-striped">
     <tr class="success">
         <th>
-            @Html.DisplayNameFor(model => model.Manufacturer)
+            @Html.DisplayNameFor(model => model.ManufacturerId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ModelNumber)
@@ -52,7 +52,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Manufacturer)
+            @Html.DisplayFor(modelItem => item.ManufacturerId)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ModelNumber)

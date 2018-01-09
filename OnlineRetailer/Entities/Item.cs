@@ -14,7 +14,11 @@ namespace OnlineRetailer.Entities
         public int Id { get; set; }
 
         [Required]
+        [DisplayName("Manufacturer")]
         public int ManufacturerId { get; set; }
+
+        [DisplayName("Manufactrers")]
+        public ICollection<Manufacturer> Manufacturers { get; set; }
 
         [Required]
         [DisplayName("Model Number")]
