@@ -92,6 +92,7 @@ namespace OnlineRetailer.Areas.Admin.Controllers
             var items = new List<Item>();
             items.Add(item);
             var itemModel = await items.Convert(db);
+
             return View(itemModel.FirstOrDefault());
         }
 
@@ -101,7 +102,7 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Manufacturer,ModelNumber,SKU,UPCCode,ShortDescription,LongDescription,ImageURL,CategoryId,ListPrice,SalePrice,Quantity,InStock")] Item item)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,ManufacturerId,ModelNumber,SKU,UPCCode,ShortDescription,LongDescription,ImageURL,CategoryId,ListPrice,SalePrice,Quantity,InStock")] Item item)
         {
             if (ModelState.IsValid)
             {

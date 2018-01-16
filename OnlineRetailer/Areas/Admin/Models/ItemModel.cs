@@ -22,9 +22,8 @@ namespace OnlineRetailer.Areas.Admin.Models
             get
             {
                 return Manufacturers == null || Manufacturers.Count.Equals(0) ?
-                    string.Empty : Manufacturers.FirstOrDefault(
-                        m => m.Id.Equals(ManufacturerId)).Name;
-
+                    string.Empty : Manufacturers.SingleOrDefault(
+                    c => c.Id.Equals(ManufacturerId)).Name;
             }
         }
 
@@ -62,7 +61,7 @@ namespace OnlineRetailer.Areas.Admin.Models
             get
             {
                 return Categories == null || Categories.Count.Equals(0) ?
-                    string.Empty : Categories.First(
+                    string.Empty : Categories.SingleOrDefault(
                         c => c.Id.Equals(CategoryId)).Name;
             }
         }

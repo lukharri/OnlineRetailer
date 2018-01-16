@@ -13,6 +13,10 @@ namespace OnlineRetailer.Areas.Admin.Extensions
 {
     public static class ConversionExtensions
     {
+        /*
+         * Convert a collection of Items into a collection of ItemModels to display all the Items
+         * in the Index view  
+         */
         public static async Task<IEnumerable<ItemModel>> Convert(this IEnumerable<Item> items, ApplicationDbContext db)
         {
             if (items.Count().Equals(0))
@@ -43,7 +47,9 @@ namespace OnlineRetailer.Areas.Admin.Extensions
                    };
         }
 
-
+        /*
+         * Convert one Item into an ItemModel - used to display the details of an item 
+         */
         public static async Task<ItemModel> Convert(this Item item, ApplicationDbContext db)
         {
 
