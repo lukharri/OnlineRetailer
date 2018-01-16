@@ -125,7 +125,8 @@ namespace OnlineRetailer.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            return View(item);
+            var itemModel = await item.Convert(db);
+            return View(itemModel);
         }
 
 
