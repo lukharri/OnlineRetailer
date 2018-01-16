@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OnlineRetailer.Entities.Item>
+﻿@model IEnumerable<OnlineRetailer.Areas.Admin.Models.ItemModel>
 
 @using OnlineRetailer.Areas.Admin.Models;
 
@@ -14,7 +14,7 @@
 <table class="table table-condensed table-striped">
     <tr class="success">
         <th>
-            @Html.DisplayNameFor(model => model.ManufacturerId)
+            @Html.DisplayNameFor(model => model.Manufacturer)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ModelNumber)
@@ -26,16 +26,7 @@
             @Html.DisplayNameFor(model => model.UPCCode)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ShortDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LongDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ImageURL)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CategoryId)
+            @Html.DisplayNameFor(model => model.Category)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ListPrice)
@@ -44,15 +35,22 @@
             @Html.DisplayNameFor(model => model.SalePrice)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.Discount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.InStock)
         </th>
+
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ManufacturerId)
+            @Html.DisplayFor(modelItem => item.Manufacturer)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ModelNumber)
@@ -64,16 +62,7 @@
             @Html.DisplayFor(modelItem => item.UPCCode)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ShortDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LongDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ImageURL)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CategoryId)
+            @Html.DisplayFor(modelItem => item.Category)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ListPrice)
@@ -82,8 +71,15 @@
             @Html.DisplayFor(modelItem => item.SalePrice)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Discount)%
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.InStock)
         </td>
+
             @Html.Partial("_TableButtonsPartial", new SmallButtonModel { Id = item.Id })
     </tr>
 }

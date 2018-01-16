@@ -9,6 +9,8 @@ using System.Web;
 using System.Web.Mvc;
 using OnlineRetailer.Entities;
 using OnlineRetailer.Models;
+using OnlineRetailer.Areas.Admin.Extensions;
+using OnlineRetailer.Areas.Admin.Models;
 
 namespace OnlineRetailer.Areas.Admin.Controllers
 {
@@ -19,7 +21,10 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         // GET: Admin/Item
         public async Task<ActionResult> Index()
         {
-            return View(await db.Items.ToListAsync());
+            var items = await db.Items.ToListAsync();
+            var model = await items.Convert(db);
+
+            return View(model);
         }
 
 
@@ -35,17 +40,19 @@ namespace OnlineRetailer.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            return View(item);
+
+            var itemModel = await item.Convert(db);
+            return View(itemModel);
         }
 
 
         // GET: Admin/Item/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
-            var model = new Item
+            var model = new ItemModel
             {
-                Manufacturers = db.Manufacturers.ToList(),
-                Categories = db.Categories.ToList()
+                Manufacturers = await db.Manufacturers.ToListAsync(),
+                Categories = await db.Categories.ToListAsync()
             };
             return View(model);
         }
@@ -56,7 +63,7 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Manufacturer,ModelNumber,SKU,UPCCode,ShortDescription,LongDescription,ImageURL,CategoryId,ListPrice,SalePrice,InStock")] Item item)
+        public async Task<ActionResult> Create([Bind(Include = "Id,ManufacturerId,ModelNumber,SKU,UPCCode,ShortDescription,LongDescription,ImageURL,CategoryId,ListPrice,SalePrice,Quantity,InStock")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -81,7 +88,11 @@ namespace OnlineRetailer.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            return View(item);
+
+            var items = new List<Item>();
+            items.Add(item);
+            var itemModel = await items.Convert(db);
+            return View(itemModel.FirstOrDefault());
         }
 
 
@@ -90,7 +101,7 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Manufacturer,ModelNumber,SKU,UPCCode,ShortDescription,LongDescription,ImageURL,CategoryId,ListPrice,SalePrice,InStock")] Item item)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Manufacturer,ModelNumber,SKU,UPCCode,ShortDescription,LongDescription,ImageURL,CategoryId,ListPrice,SalePrice,Quantity,InStock")] Item item)
         {
             if (ModelState.IsValid)
             {

@@ -1,20 +1,35 @@
-﻿using System;
+﻿using OnlineRetailer.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Web;
 
-namespace OnlineRetailer.Entities
+namespace OnlineRetailer.Areas.Admin.Models
 {
-    public class Item
+    public class ItemModel
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required]
         [DisplayName("Manufacturer Id")]
         public int ManufacturerId { get; set; }
+
+        public string Manufacturer
+        {
+            get
+            {
+                return Manufacturers == null || Manufacturers.Count.Equals(0) ?
+                    string.Empty : Manufacturers.FirstOrDefault(
+                        m => m.Id.Equals(ManufacturerId)).Name;
+
+            }
+        }
+
+        [DisplayName("Manufactrer")]
+        public ICollection<Manufacturer> Manufacturers { get; set; }
 
         [Required]
         [DisplayName("Model Number")]
@@ -42,6 +57,19 @@ namespace OnlineRetailer.Entities
         [DisplayName("Category")]
         public int CategoryId { get; set; }
 
+        public string Category
+        {
+            get
+            {
+                return Categories == null || Categories.Count.Equals(0) ?
+                    string.Empty : Categories.First(
+                        c => c.Id.Equals(CategoryId)).Name;
+            }
+        }
+
+        [DisplayName("Category")]
+        public ICollection<Category> Categories { get; set; }
+
         [Required]
         [DisplayName("List Price")]
         public float ListPrice { get; set; }
@@ -50,13 +78,17 @@ namespace OnlineRetailer.Entities
         [DisplayName("Sale Price")]
         public float SalePrice { get; set; }
 
-        public double Discount {
-            get { return Math.Round((1 - (SalePrice / ListPrice)) * 100); } }
+        public double Discount
+        {
+            get { return Math.Round((1 - (SalePrice / ListPrice)) * 100); }
+            set { }
+        }
 
         [DisplayName("In Stock")]
         public bool InStock { get; set; }
 
         [Required]
         public int Quantity { get; set; }
+
     }
 }

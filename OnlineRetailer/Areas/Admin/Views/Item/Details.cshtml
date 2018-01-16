@@ -1,4 +1,5 @@
-﻿@model OnlineRetailer.Entities.Item
+﻿@model OnlineRetailer.Areas.Admin.Models.ItemModel
+
 
 @{
     ViewBag.Title = "WoW | Admin";
@@ -66,11 +67,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.CategoryId)
+            @Html.DisplayNameFor(model => model.Category)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CategoryId)
+            @Html.DisplayFor(model => model.Category)
         </dd>
 
         <dt>
@@ -87,6 +88,21 @@
 
         <dd>
             @Html.DisplayFor(model => model.SalePrice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Discount)%
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)%
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
         </dd>
 
         <dt>
