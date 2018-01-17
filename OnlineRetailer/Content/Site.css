@@ -1,5 +1,4 @@
 ﻿body {
-    padding-top: 195px;
     padding-bottom: 20px;
 }
 
@@ -7,6 +6,7 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 1242px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/****************************************  HOME/INDEX  **********************************/
+.banner-large { width: 1242px; height: 402px; margin: 0 auto; }
+.featured-brands { position: relative; height: 540px; width: 1242px; margin-top: 20px; }
+.item { position: absolute; margin-bottom: 5px; }
+.item-1 { left: 630px; }
+.item-2 {top: 52%; }
+.item-3 {}
+.item-4 { top: 52%; left: 630px; }

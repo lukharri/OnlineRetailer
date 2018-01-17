@@ -1,0 +1,18 @@
+﻿body {
+}
+
+.copywright-container { width: 1242px; margin-top: 30px; }
+.footer-copywright { text-align: center; }
+.footer-content { height: 300px; width: 1242px; margin: 0 auto; margin-top: 60px; }
+.footer-list-container { position: relative; }
+.footer-list { list-style-type: none; }
+.footer-title { font-size: 18px; font-weight: bolder; color: #b70000; }
+.footer-link { font-size: 12px; color: black; }
+.company-info { position: absolute; }
+.policies { left: 300px; position: absolute; }
+.why-shop-here { left: 600px; position: absolute; }
+.help-area { left: 900px; position: absolute; }
+.customer-service { position: absolute; top: 130px; }
+.email-signup {position: absolute; top: 130px; left: 300px; }
+.chat {position: absolute; top: 130px; left: 600px;}
+.perks {position: absolute; top: 130px; left: 900px; }

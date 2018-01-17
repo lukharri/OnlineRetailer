@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -20,6 +20,9 @@
                 <a class="navbar-brand" href="Home/Index">
                     <img class="home-logo" src="~/Content/Images/General/Logo.png" />
                 </a>
+            </div>
+            <div>
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -40,7 +43,76 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <div class="footer-content">
+
+                <div class="footer-list-container">
+                    <ul class="company-info footer-list">
+                        <li class="footer-title"><p>COMPANY INFO</p></li>
+                        <li class="footer-link">@Html.ActionLink("About Us", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("Contact Us", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("Blog", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list-container">
+                    <ul class="policies footer-list">
+                        <li class="footer-title"><p>POLICIES & ORDER</p></li>
+                        <li class="footer-link">@Html.ActionLink("My Account", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("Returns", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("Payment Options", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list-container">
+                    <ul class="why-shop-here footer-list">
+                        <li class="footer-title"><p>WHY SHOP WITH US</p></li>
+                        <li class="footer-link">@Html.ActionLink("30 Day Return Policy", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("Free Shipping Over $100", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("100% Authentic Watches", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list-container">
+                    <ul class="help-area footer-list">
+                        <li class="footer-title"><p>HELP AREA</p></li>
+                        <li class="footer-link">@Html.ActionLink("Warranty", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("Privacy Policy", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("FAQs", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list-container">
+                    <ul class="customer-service footer-list">
+                        <li class="footer-title"><p>WE'RE HERE TO HELP!</p></li>
+                        <li><p>Customer Service/Returns Dept.</p></li>
+                        <li><p>WorldofWatches.com</p></li>
+                        <li><p>1303 53rd Street, Unit 324 </p></li>
+                        <li><p>Brooklyn, NY 11219</p></li>
+                    </ul>
+                </div>
+
+                <div class="footer-list-container">
+                    <ul class="email-signup footer-list">
+                        <li class="footer-title"><p>SIGN UP FOR EXCLUSIVE EMAIL:</p></li>
+                    </ul>
+                </div>
+
+                <div class="footer-list-container">
+                    <ul class="chat footer-list">
+                    </ul>
+                </div>
+
+                <div class="footer-list-container">
+                    <ul class="perks footer-list">
+                        <li class="footer-title"><p>PERKS</p></li>
+                        <li class="footer-link">@Html.ActionLink("30 Day Return Policy", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("Free Shipping Over $100", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                        <li class="footer-link">@Html.ActionLink("100% Authentic Watches", "Index", "Home", new { @style = "font-size: 14px; color: black;" })</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="copywright-container"><p class="footer-copywright">&copy; @DateTime.Now.Year - WoW | BRAVO TECHNOLOGY</p></div>
         </footer>
     </div>
 

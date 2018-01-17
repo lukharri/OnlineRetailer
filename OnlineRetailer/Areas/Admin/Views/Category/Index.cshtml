@@ -6,27 +6,31 @@
     ViewBag.Title = "WoW | Admin";
 }
 
-<h3>Categories</h3>
+<div class="admin-view-container">
 
-<p>
-    @Html.Partial("_CreateButtonPartial", "Create")
-</p>
-<table class="table table-condensed table-striped">
-    <tr class="success">
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
+    <h3>Categories</h3>
 
-        <th></th>
-    </tr>
+    <p>
+        @Html.Partial("_CreateButtonPartial", "Create")
+    </p>
+    <table class="table table-condensed table-striped">
+        <tr class="success">
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-            @Html.Partial("_TableButtonsPartial", new SmallButtonModel { Id = item.Id })
-    </tr>
-}
+            <th></th>
+        </tr>
 
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                @Html.Partial("_TableButtonsPartial", new SmallButtonModel { Id = item.Id })
+            </tr>
+        }
+
+    </table>
+</div>

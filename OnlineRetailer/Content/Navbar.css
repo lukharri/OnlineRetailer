@@ -1,10 +1,12 @@
 ﻿body { 
 }
 
-.navbar { background-color: white; }
+.navbar { background-color: white; border: none; }
 .navbar-inverse .navbar-nav > li > a { color: black; }
 .navbar-inverse .navbar-nav > li > a:hover { color: #b70000; }
 .sale-alert { background: #b70000; color: white; font-weight: bold; text-align: center; padding: 10px;
               height: 40px; margin-top: 10px; width: 100vw;
 }
 
+#admin > a:hover { color: #b70000; background-color: white; }
+.home-logo { height: 38.625px; width: 300px;}

@@ -5,117 +5,120 @@
     ViewBag.Title = "WoW | Admin";
 }
 
-<h3>Item Details</h3>
+<div class="admin-view-container">
 
-<div>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Manufacturer)
-        </dt>
+    <h3>Item Details</h3>
 
-        <dd>
-            @Html.DisplayFor(model => model.Manufacturer)
-        </dd>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Manufacturer)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ModelNumber)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Manufacturer)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ModelNumber)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ModelNumber)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SKU)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ModelNumber)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.SKU)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.SKU)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UPCCode)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.SKU)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.UPCCode)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.UPCCode)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ShortDescription)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.UPCCode)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ShortDescription)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShortDescription)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.LongDescription)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShortDescription)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.LongDescription)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.LongDescription)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ImageURL)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.LongDescription)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ImageURL)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ImageURL)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ImageURL)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Category)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ListPrice)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Category)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ListPrice)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ListPrice)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SalePrice)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ListPrice)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.SalePrice)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Discount)%
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.SalePrice)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Discount)%
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.SalePrice)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Discount)%
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Discount)%
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.InStock)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.InStock)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.InStock)
+            </dt>
 
-    </dl>
+            <dd>
+                @Html.DisplayFor(model => model.InStock)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.Partial("_EditButtonPartial", Model.Id)
+        @Html.Partial("_BackToListButtonPartial")
+    </p>
 </div>
-<p>
-    @Html.Partial("_EditButtonPartial", Model.Id)
-    @Html.Partial("_BackToListButtonPartial")
-</p>
