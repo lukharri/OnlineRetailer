@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnlineRetailer.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,12 @@ namespace OnlineRetailer.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new List<ThumbnailAreaModel>();
+            model.Add(new ThumbnailAreaModel
+            {
+                    Thumbnails = new List<ThumbnailModel>()  
+            });
+            return View(model);
         }
 
         public ActionResult About()

@@ -1,4 +1,7 @@
-﻿@{
+﻿@model IEnumerable<OnlineRetailer.Models.ThumbnailAreaModel>
+
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -7,11 +10,13 @@
 </div>
 
 <div>
-    <div>
-
-    </div>
+    <div><h2>Daily Deals</h2></div>
 </div>
 
+@foreach(var area in Model)
+{
+    @Html.Partial("_ThumbnailAreaPartial", area)
+}
 
 <div>
     <div class="featured-brands">

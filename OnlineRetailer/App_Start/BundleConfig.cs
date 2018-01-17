@@ -26,6 +26,7 @@ namespace OnlineRetailer
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/Admin.css",
+                      "~/Content/Thumbnails.css",
                       "~/Content/Footer.css",
                       "~/Content/Navbar.css",
                       "~/Content/Login.css",

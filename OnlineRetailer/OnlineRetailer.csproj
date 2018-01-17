@@ -194,8 +194,10 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ThumbnailAreaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Models\ThumbnailModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Admin.css" />
@@ -279,6 +281,7 @@
     <Content Include="Content\Images\Watches\Suunto\ElementumTerra.jpg" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Navbar.css" />
+    <Content Include="Content\Thumbnails.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -373,6 +376,7 @@
     <Content Include="Views\Shared\_TableButtonsPartial.cshtml" />
     <Content Include="Views\Shared\_SmallButtonPartial.cshtml" />
     <Content Include="Views\Shared\_AddToCartButtonPartial.cshtml" />
+    <Content Include="Views\Shared\_ThumbnailAreaPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
