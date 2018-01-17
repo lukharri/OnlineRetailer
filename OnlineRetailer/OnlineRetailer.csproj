@@ -372,6 +372,7 @@
     <Content Include="Views\Shared\_DeleteButtonPartial.cshtml" />
     <Content Include="Views\Shared\_TableButtonsPartial.cshtml" />
     <Content Include="Views\Shared\_SmallButtonPartial.cshtml" />
+    <Content Include="Views\Shared\_AddToCartButtonPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
