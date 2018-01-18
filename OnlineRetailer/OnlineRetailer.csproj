@@ -210,6 +210,8 @@
     <Content Include="Content\Images\General\Logo.png" />
     <Content Include="Content\Images\General\Logo2.jpg" />
     <Content Include="Content\Images\General\Logo3.png" />
+    <Content Include="Content\Images\General\Logo4.jpg" />
+    <Content Include="Content\Images\General\Logo5.jpg" />
     <Content Include="Content\Images\General\LPBannerSmall.jpg" />
     <Content Include="Content\Images\General\SLBannerSmall.jpg" />
     <Content Include="Content\Images\Handbags\Burberry\Abingdon.jpg" />

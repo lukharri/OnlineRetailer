@@ -1,7 +1,7 @@
 ﻿body { 
 }
 
-.navbar { background-color: white; border: none; }
+.navbar { background-color: white; border: none; margin-top: 10px; }
 .navbar-inverse .navbar-nav > li > a { color: black; }
 .navbar-inverse .navbar-nav > li > a:hover { color: #b70000; }
 .sale-alert { background: #b70000; color: white; font-weight: bold; text-align: center; padding: 10px;
@@ -9,4 +9,4 @@
 }
 
 #admin > a:hover { color: #b70000; background-color: white; }
-.home-logo { height: 110px; width: 220px; margin-bottom: -30px; }
+.home-logo { height: 110px; width: 220px; margin-bottom: -25px; }

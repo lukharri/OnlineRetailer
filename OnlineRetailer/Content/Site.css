@@ -26,7 +26,7 @@ textarea {
 
 /****************************************  HOME/INDEX  **********************************/
 .banner-large { width: 1242px; height: 402px; margin: 0 auto; }
-.featured-brands { width: 1242px; border: 1px solid red;}
+.featured-brands { width: 1242px; }
 .item { }
 .item-1 {margin-left: 3px; }
 .item-2 { margin-left: 15px;}
