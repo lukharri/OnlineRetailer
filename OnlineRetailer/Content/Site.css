@@ -1,5 +1,5 @@
 ﻿body {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -26,9 +26,10 @@ textarea {
 
 /****************************************  HOME/INDEX  **********************************/
 .banner-large { width: 1242px; height: 402px; margin: 0 auto; }
-.featured-brands { position: relative; height: 540px; width: 1242px; margin-top: 20px; }
-.item { position: absolute; margin-bottom: 5px; }
-.item-1 { left: 630px; }
-.item-2 {top: 52%; }
-.item-3 {}
-.item-4 { top: 52%; left: 630px; }
+.featured-brands { width: 1242px; border: 1px solid red;}
+.item { }
+.item-1 {margin-left: 3px; }
+.item-2 { margin-left: 15px;}
+.item-3 { margin-left: 3px; }
+.item-4 { margin-left: 15px;}
+#daily-deals { margin-left: 540px; margin-top: 40px; margin-bottom: 40px}

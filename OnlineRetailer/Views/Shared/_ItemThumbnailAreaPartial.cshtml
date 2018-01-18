@@ -1,0 +1,27 @@
+﻿@model IEnumerable<OnlineRetailer.Areas.Admin.Models.ItemModel>
+
+@using OnlineRetailer.Areas.Admin.Models;
+
+<div class="thumbnail-panel">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-3">
+            <div class="thumbnail">
+                <img class="thumb-img" src="@Html.DisplayFor(modelItem => item.ImageURL)" alt="" />
+                <div class="thumb-details">
+                    <h3 class="thumb-manufacturer">@Html.DisplayFor(modelItem => item.Manufacturer)</h3>
+                    <h4 class="thumb-description">@Html.DisplayFor(modelItem => item.ShortDescription)</h4>
+                    <p class="thumb-sale-price">Sale Price: $@Html.DisplayFor(modelItem => item.SalePrice)</p>
+                    <p class="thumb-list-price">List Price: $@Html.DisplayFor(modelItem => item.ListPrice)</p>
+                    <p class="thumb-discount">Savings: @Html.DisplayFor(modelItem => item.Discount)%</p>
+                </div>
+                @Html.Partial("_AddToCartButtonPartial")
+                <div>
+                    <span class="glyphicon glyphicon-heart thumb-heart"></span>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+

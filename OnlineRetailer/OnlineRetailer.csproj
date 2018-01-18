@@ -187,18 +187,16 @@
     <Compile Include="Entities\Manufacturer.cs" />
     <Compile Include="Extensions\ICollectionExtensions.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
-    <Compile Include="Extensions\ThumbnailExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ItemThumbnailModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\ThumbnailAreaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="Models\ThumbnailModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Admin.css" />
@@ -210,6 +208,8 @@
     <Content Include="Content\Images\General\EliniBannerSmall.jpg" />
     <Content Include="Content\Images\General\InvictaBannerSmall.jpg" />
     <Content Include="Content\Images\General\Logo.png" />
+    <Content Include="Content\Images\General\Logo2.jpg" />
+    <Content Include="Content\Images\General\Logo3.png" />
     <Content Include="Content\Images\General\LPBannerSmall.jpg" />
     <Content Include="Content\Images\General\SLBannerSmall.jpg" />
     <Content Include="Content\Images\Handbags\Burberry\Abingdon.jpg" />
@@ -378,6 +378,7 @@
     <Content Include="Views\Shared\_SmallButtonPartial.cshtml" />
     <Content Include="Views\Shared\_AddToCartButtonPartial.cshtml" />
     <Content Include="Views\Shared\_ThumbnailAreaPartial.cshtml" />
+    <Content Include="Views\Shared\_ItemThumbnailAreaPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

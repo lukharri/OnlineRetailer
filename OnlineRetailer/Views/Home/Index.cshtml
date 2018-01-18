@@ -1,4 +1,6 @@
-﻿@model IEnumerable<OnlineRetailer.Models.ThumbnailAreaModel>
+﻿@model IEnumerable<OnlineRetailer.Areas.Admin.Models.ItemModel>
+
+@using OnlineRetailer.Areas.Admin.Models;
 
 
 @{
@@ -9,14 +11,11 @@
     <a><img src="~/Content/Images/General/Banner.jpg" /></a>
 </div>
 
-<div>
-    <div><h2>Daily Deals</h2></div>
+<div>  
+    <div><h2 id="daily-deals">Daily Deals</h2></div>
 </div>
 
-@foreach(var area in Model)
-{
-    @Html.Partial("_ThumbnailAreaPartial", area)
-}
+@Html.Partial("_ItemThumbnailAreaPartial", Model)
 
 <div>
     <div class="featured-brands">

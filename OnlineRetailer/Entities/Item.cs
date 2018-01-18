@@ -51,7 +51,9 @@ namespace OnlineRetailer.Entities
         public float SalePrice { get; set; }
 
         public double Discount {
-            get { return Math.Round((1 - (SalePrice / ListPrice)) * 100); } }
+            get { return Math.Round((1 - (SalePrice / ListPrice)) * 100); }
+            set { }
+        }
 
         [DisplayName("In Stock")]
         public bool InStock { get; set; }

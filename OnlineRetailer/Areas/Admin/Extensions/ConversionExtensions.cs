@@ -83,5 +83,37 @@ namespace OnlineRetailer.Areas.Admin.Extensions
             return (model);
         }
 
+
+
+        //public static IEnumerable<ItemModel> ConvertItems(this IEnumerable<Item> items, ApplicationDbContext db)
+        //{
+        //    if (items.Count().Equals(0))
+        //        return new List<ItemModel>();
+
+        //    var categories = db.Categories.ToList();
+        //    var maunfacturers = db.Manufacturers.ToList();
+
+        //    return from i in items
+        //           select new ItemModel
+        //           {
+        //               Id = i.Id,
+        //               ModelNumber = i.ModelNumber,
+        //               SKU = i.SKU,
+        //               UPCCode = i.UPCCode,
+        //               LongDescription = i.LongDescription,
+        //               ShortDescription = i.ShortDescription,
+        //               ImageURL = i.ImageURL,
+        //               ListPrice = i.ListPrice,
+        //               SalePrice = i.SalePrice,
+        //               Discount = i.Discount,
+        //               InStock = i.InStock,
+        //               Quantity = i.Quantity,
+        //               CategoryId = i.CategoryId,
+        //               ManufacturerId = i.ManufacturerId,
+        //               Manufacturers = maunfacturers,
+        //               Categories = categories
+        //           };
+        //}
+
     }
 }
