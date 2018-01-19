@@ -381,6 +381,8 @@
     <Content Include="Views\Shared\_AddToCartButtonPartial.cshtml" />
     <Content Include="Views\Shared\_ThumbnailAreaPartial.cshtml" />
     <Content Include="Views\Shared\_ItemThumbnailAreaPartial.cshtml" />
+    <Content Include="Views\Shared\_SearchBoxPartial.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

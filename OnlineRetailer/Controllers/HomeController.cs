@@ -35,5 +35,20 @@ namespace OnlineRetailer.Controllers
 
             return View();
         }
+
+
+        public async Task<ActionResult> Search(string searchString)
+        {
+            var items = await db.Items.ToListAsync();
+            var itemModels = await items.Convert(db);
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                itemModels = itemModels.Where(i => i.Manufacturer.Contains(searchString));
+            }
+            else itemModels = new List<ItemModel>();
+
+            return View(itemModels);
+        }
     }
 }
