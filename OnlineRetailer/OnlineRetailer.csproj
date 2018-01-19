@@ -206,7 +206,9 @@
     <Content Include="Content\Footer.css" />
     <Content Include="Content\Images\General\Banner.jpg" />
     <Content Include="Content\Images\General\Banner2.jpg" />
+    <Content Include="Content\Images\General\EliniBannerLarge.jpg" />
     <Content Include="Content\Images\General\EliniBannerSmall.jpg" />
+    <Content Include="Content\Images\General\InvictaBannerLarge.jpg" />
     <Content Include="Content\Images\General\InvictaBannerSmall.jpg" />
     <Content Include="Content\Images\General\Logo.png" />
     <Content Include="Content\Images\General\Logo2.jpg" />
@@ -214,7 +216,9 @@
     <Content Include="Content\Images\General\Logo4.jpg" />
     <Content Include="Content\Images\General\Logo5.jpg" />
     <Content Include="Content\Images\General\LPBannerSmall.jpg" />
+    <Content Include="Content\Images\General\LucienBannerLarge.jpg" />
     <Content Include="Content\Images\General\SLBannerSmall.jpg" />
+    <Content Include="Content\Images\General\SwissBannerLarge.jpg" />
     <Content Include="Content\Images\Handbags\Burberry\Abingdon.jpg" />
     <Content Include="Content\Images\Handbags\Burberry\BannerBeast.jpg" />
     <Content Include="Content\Images\Handbags\Burberry\CoachSophia.jpg" />
@@ -391,6 +395,7 @@
     <Content Include="Views\Product\Invicta.cshtml" />
     <Content Include="Views\Product\LucienPicard.cshtml" />
     <Content Include="Views\Product\SwissLegend.cshtml" />
+    <Content Include="Views\Shared\_ManufacturerPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

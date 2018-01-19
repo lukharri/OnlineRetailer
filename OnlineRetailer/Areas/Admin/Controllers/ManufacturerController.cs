@@ -48,7 +48,7 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name")] Manufacturer manufacturer)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Name,BannerUrl,Summary")] Manufacturer manufacturer)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +80,7 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name")] Manufacturer manufacturer)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,BannerUrl,Summary")] Manufacturer manufacturer)
         {
             if (ModelState.IsValid)
             {

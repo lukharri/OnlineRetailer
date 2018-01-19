@@ -11,7 +11,7 @@
     <a><img src="~/Content/Images/General/Banner.jpg" /></a>
 </div>
 
-<div>  
+<div>
     <div><h2 id="daily-deals">Daily Deals</h2></div>
 </div>
 
@@ -20,12 +20,20 @@
 <div>
     <div class="featured-brands">
         <div class="top-brands">
-            <a class="item item-1" href="#"><img src="~/Content/Images/General/EliniBannerSmall.jpg" /></a>
-            <a class="item item-2" href="#"><img src="~/Content/Images/General/InvictaBannerSmall.jpg" /></a>
+            <a class="item-1" href="@Url.Action("EliniBarokas", "Product")">
+                <img src="@Url.Content("~/Content/Images/General/EliniBannerSmall.jpg")"/>
+            </a>
+            <a class="item-2" href="@Url.Action("Invicta", "Product")">
+                <img src="@Url.Content("~/Content/Images/General/InvictaBannerSmall.jpg")" />
+            </a>
         </div>
         <div class="bottom-brands">
-            <a class="item item-3" href="#"><img src="~/Content/Images/General/LPBannerSmall.jpg" /></a>
-            <a class="item item-4" href="#"><img src="~/Content/Images/General/SLBannerSmall.jpg" /></a>
+            <a class="item-3" href="@Url.Action("LucienPicard", "Product")">
+                <img src="@Url.Content("~/Content/Images/General/LPBannerSmall.jpg")" />
+            </a>
+            <a class="item-4" href="@Url.Action("Invicta", "Product")">
+                <img src="@Url.Content("~/Content/Images/General/SLBannerSmall.jpg")" />
+            </a>
         </div>
     </div>
 </div>
