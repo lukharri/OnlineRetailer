@@ -60,5 +60,7 @@ namespace OnlineRetailer.Entities
 
         [Required]
         public int Quantity { get; set; }
+
+        public bool IsDailySpecial { get; set; }
     }
 }

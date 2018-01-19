@@ -19,6 +19,7 @@ namespace OnlineRetailer.Controllers
         {
             var items = await db.Items.ToListAsync();
             var model = await items.Convert(db);
+            model = model.Where(i => i.InStock == true);
             return View(model);
         }
 
