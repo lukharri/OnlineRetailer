@@ -16,10 +16,10 @@ namespace OnlineRetailer.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         public async Task<ActionResult> Index()
+
         {
-            var items = await db.Items.ToListAsync();
+            var items = await db.Items.Where(m => m.IsDailySpecial == true).ToListAsync();
             var model = await items.Convert(db);
-            model = model.Where(i => i.InStock == true);
             return View(model);
         }
 
@@ -51,5 +51,7 @@ namespace OnlineRetailer.Controllers
 
             return View(itemModels);
         }
+
+
     }
 }

@@ -178,6 +178,7 @@
     <Compile Include="Areas\Admin\Models\SmallButtonModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Customer.cs" />
@@ -379,10 +380,13 @@
     <Content Include="Views\Shared\_TableButtonsPartial.cshtml" />
     <Content Include="Views\Shared\_SmallButtonPartial.cshtml" />
     <Content Include="Views\Shared\_AddToCartButtonPartial.cshtml" />
-    <Content Include="Views\Shared\_ThumbnailAreaPartial.cshtml" />
     <Content Include="Views\Shared\_ItemThumbnailAreaPartial.cshtml" />
     <Content Include="Views\Shared\_SearchBoxPartial.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Product\MensWatches.cshtml" />
+    <Content Include="Views\Product\WomensWatches.cshtml" />
+    <Content Include="Views\Product\Handbags.cshtml" />
+    <Content Include="Views\Product\Sunglasses.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -16,6 +16,9 @@
     <table class="table table-condensed table-striped">
         <tr class="success">
             <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Manufacturer)
             </th>
             <th>
@@ -28,17 +31,14 @@
                 @Html.DisplayNameFor(model => model.UPCCode)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Category)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.ListPrice)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.SalePrice)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Discount)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Quantity)
             </th>
@@ -56,6 +56,9 @@
         {
             <tr>
                 <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.Manufacturer)
                 </td>
                 <td>
@@ -68,17 +71,14 @@
                     @Html.DisplayFor(modelItem => item.UPCCode)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Category)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.ListPrice)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.SalePrice)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.Discount)%
-                </td>
+                </td>*@
                 <td>
                     @Html.DisplayFor(modelItem => item.Quantity)
                 </td>

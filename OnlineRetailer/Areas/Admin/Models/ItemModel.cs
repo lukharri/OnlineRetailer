@@ -89,6 +89,7 @@ namespace OnlineRetailer.Areas.Admin.Models
         [Required]
         public int Quantity { get; set; }
 
+        [DisplayName("Daily Special")]
         public bool IsDailySpecial { get; set; }
 
     }

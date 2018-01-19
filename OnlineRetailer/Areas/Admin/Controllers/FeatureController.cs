@@ -19,7 +19,7 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         // GET: Admin/Feature
         public async Task<ActionResult> Index()
         {
-            return View(await db.Features.ToListAsync());
+            return View(await db.Features.OrderBy(n => n.Name).ToListAsync());
         }
 
         // GET: Admin/Feature/Details/5

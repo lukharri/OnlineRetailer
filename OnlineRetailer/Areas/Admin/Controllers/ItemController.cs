@@ -23,7 +23,7 @@ namespace OnlineRetailer.Areas.Admin.Controllers
         {
             var items = await db.Items.ToListAsync();
             var model = await items.Convert(db);
-
+            model = model.OrderBy(c => c.Category);
             return View(model);
         }
 

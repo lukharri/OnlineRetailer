@@ -1,0 +1,13 @@
+﻿
+
+@model IEnumerable<OnlineRetailer.Areas.Admin.Models.ItemModel>
+
+@using OnlineRetailer.Areas.Admin.Models;
+
+@{
+    ViewBag.Title = "Handbags";
+}
+
+<h2>Handbags</h2>
+
+@Html.Partial("_ItemThumbnailAreaPartial", Model)
