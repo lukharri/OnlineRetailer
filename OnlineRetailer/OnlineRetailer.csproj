@@ -250,16 +250,16 @@
     <Content Include="Content\Images\Watches\Casio\GShock.jpg" />
     <Content Include="Content\Images\Watches\Casio\Poptone.jpg" />
     <Content Include="Content\Images\Watches\Casio\ProTrek.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\Arena.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\Artisan.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\Captain.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\Fortitudo.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\GenesisPrime.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\GenesisVision.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\GenesisWorld.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\KingChronograph.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\MasterGhost.jpg" />
-    <Content Include="Content\Images\Watches\EliniBarakos\SpiritAuto.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\Arena.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\Artisan.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\Captain.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\Fortitudo.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\GenesisPrime.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\GenesisVision.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\GenesisWorld.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\KingChronograph.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\MasterGhost.jpg" />
+    <Content Include="Content\Images\Watches\EliniBarokas\SpiritAuto.jpg" />
     <Content Include="Content\Images\Watches\Invicta\Anatomic.jpg" />
     <Content Include="Content\Images\Watches\Invicta\Aviator.jpg" />
     <Content Include="Content\Images\Watches\Invicta\AviatorAutomatic.jpg" />
@@ -387,6 +387,10 @@
     <Content Include="Views\Product\WomensWatches.cshtml" />
     <Content Include="Views\Product\Handbags.cshtml" />
     <Content Include="Views\Product\Sunglasses.cshtml" />
+    <Content Include="Views\Product\EliniBarokas.cshtml" />
+    <Content Include="Views\Product\Invicta.cshtml" />
+    <Content Include="Views\Product\LucienPicard.cshtml" />
+    <Content Include="Views\Product\SwissLegend.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

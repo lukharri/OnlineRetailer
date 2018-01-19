@@ -1,11 +1,13 @@
 ﻿.thumbnail-panel { margin-left: -12px; margin-right: -43px;}
 .thumbnail { position: relative; border: none;}
+.thumb-img { width: 180px; }
 .thumb-details {}
-.thumb-description { font-size: 18px; color: #7d7d7d; }
-.thumb-sale-price {font-size: 16px; color: #B70000; }
-.thumb-list-price {font-size: 16px; color: #7d7d7d; text-decoration: line-through; }
-.thumb-discount {font-size: 16px; color: #7d7d7d;}
-.thumb-heart {font-size: 30px; position: absolute; top: 490px; left: 120px; }
+.thumb-manufacturer { font-size: 16px; }
+.thumb-description { font-size: 14px; color: #7d7d7d; }
+.thumb-sale-price {font-size: 14px; color: #B70000; }
+.thumb-list-price {font-size: 14px; color: #7d7d7d; text-decoration: line-through; }
+.thumb-discount {font-size: 14px; color: #7d7d7d;}
+.thumb-heart {font-size: 30px; position: absolute; top: 390px; left: 120px; }
 .add-to-cart-btn-sm { background-color: black; color: white; font-weight: bolder; border-radius: 0px; }
 .daily-watch-list { list-style-type: none; }
 .daily-watch-list > li > .thumbnail{ float: left; }

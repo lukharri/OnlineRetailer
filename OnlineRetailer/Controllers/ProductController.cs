@@ -56,5 +56,41 @@ namespace OnlineRetailer.Controllers
             return View(itemModels);
         }
 
+
+        public async Task<ActionResult> EliniBarokas()
+        {
+            var items = await db.Items.ToListAsync();
+            var itemModels = await items.Convert(db);
+            itemModels = itemModels.Where(i => i.Manufacturer == "Elini Barokas");
+            return View(itemModels);
+        }
+
+
+        public async Task<ActionResult> Invicta()
+        {
+            var items = await db.Items.ToListAsync();
+            var itemModels = await items.Convert(db);
+            itemModels = itemModels.Where(i => i.Manufacturer == "Invicta");
+            return View(itemModels);
+        }
+
+
+        public async Task<ActionResult> LucienPicard()
+        {
+            var items = await db.Items.ToListAsync();
+            var itemModels = await items.Convert(db);
+            itemModels = itemModels.Where(i => i.Manufacturer == "LucienPicard");
+            return View(itemModels);
+        }
+
+
+        public async Task<ActionResult> SwissLegend()
+        {
+            var items = await db.Items.ToListAsync();
+            var itemModels = await items.Convert(db);
+            itemModels = itemModels.Where(i => i.Manufacturer == "SwissLegend");
+            return View(itemModels);
+        }
+
     }
 }

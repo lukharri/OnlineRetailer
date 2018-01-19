@@ -7,10 +7,12 @@
     {
         <div class="col-sm-3">
             <div class="thumbnail">
-                <img class="thumb-img" src="@Html.DisplayFor(modelItem => item.ImageURL)" alt="" />
+                <div>
+                    <img class="thumb-img" src="@Html.DisplayFor(modelItem => item.ImageURL)" alt="" />
+                </div>
                 <div class="thumb-details">
-                    <h3 class="thumb-manufacturer">@Html.DisplayFor(modelItem => item.Manufacturer)</h3>
-                    <h4 class="thumb-description">@Html.DisplayFor(modelItem => item.ShortDescription)</h4>
+                    <p class="thumb-manufacturer">@Html.DisplayFor(modelItem => item.Manufacturer)</p>
+                    <p class="thumb-description">@Html.DisplayFor(modelItem => item.ShortDescription)</p>
                     <p class="thumb-sale-price">Sale Price: $@Html.DisplayFor(modelItem => item.SalePrice)</p>
                     <p class="thumb-list-price">List Price: $@Html.DisplayFor(modelItem => item.ListPrice)</p>
                     <p class="thumb-discount">Savings: @Html.DisplayFor(modelItem => item.Discount)%</p>

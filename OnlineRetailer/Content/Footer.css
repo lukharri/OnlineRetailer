@@ -1,6 +1,6 @@
 ﻿body {
 }
-
+.footer { clear: both; }
 .copywright-container { width: 1242px; margin-top: 30px; }
 .footer-copywright { text-align: center; }
 .footer-content { height: 300px; width: 1242px; margin: 0 auto; margin-top: 60px; }
