@@ -16,11 +16,12 @@
     <table class="table table-condensed table-striped">
         <tr class="success">
             <th>
-                @Html.DisplayNameFor(model => model.Category)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Manufacturer)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.ModelNumber)
             </th>
@@ -39,16 +40,15 @@
             @*<th>
                 @Html.DisplayNameFor(model => model.Discount)
             </th>*@
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Quantity)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.InStock)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.IsDailySpecial)
             </th>
-
             <th></th>
         </tr>
 
@@ -56,11 +56,12 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Category)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.Manufacturer)
                 </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+
                 <td>
                     @Html.DisplayFor(modelItem => item.ModelNumber)
                 </td>
@@ -79,9 +80,9 @@
                 @*<td>
                     @Html.DisplayFor(modelItem => item.Discount)%
                 </td>*@
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.Quantity)
-                </td>
+                </td>*@
                 <td>
                     @Html.DisplayFor(modelItem => item.InStock)
                 </td>

@@ -42,6 +42,7 @@ namespace OnlineRetailer.Areas.Admin.Extensions
                        Quantity = i.Quantity,
                        CategoryId = i.CategoryId,
                        ManufacturerId = i.ManufacturerId,
+                       IsDailySpecial = i.IsDailySpecial,
                        Manufacturers = maunfacturers,
                        Categories = categories
                    };
@@ -74,6 +75,7 @@ namespace OnlineRetailer.Areas.Admin.Extensions
                        Quantity = item.Quantity,
                        CategoryId = item.CategoryId,
                        ManufacturerId = item.ManufacturerId,
+                       IsDailySpecial = item.IsDailySpecial,
                        Manufacturers = new List<Manufacturer>(),
                        Categories = new List<Category>()
                    };

@@ -46,7 +46,7 @@ namespace OnlineRetailer.Models
         public DbSet<ItemFeature> ItemFeatures { get; set; }
         public DbSet<Manufacturer> Manufacturers { get; set; }
 
-        public System.Data.Entity.DbSet<OnlineRetailer.Areas.Admin.Models.ItemModel> ItemModels { get; set; }
+
     }
 
 }

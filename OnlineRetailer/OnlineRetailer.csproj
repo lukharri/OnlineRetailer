@@ -206,6 +206,7 @@
     <Content Include="Content\Footer.css" />
     <Content Include="Content\Images\General\Banner.jpg" />
     <Content Include="Content\Images\General\Banner2.jpg" />
+    <Content Include="Content\Images\General\Banner3.jpg" />
     <Content Include="Content\Images\General\EliniBannerLarge.jpg" />
     <Content Include="Content\Images\General\EliniBannerSmall.jpg" />
     <Content Include="Content\Images\General\InvictaBannerLarge.jpg" />
@@ -396,6 +397,7 @@
     <Content Include="Views\Product\LucienPicard.cshtml" />
     <Content Include="Views\Product\SwissLegend.cshtml" />
     <Content Include="Views\Shared\_ManufacturerPartial.cshtml" />
+    <Content Include="Views\Shared\_ItemThumbnailListPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

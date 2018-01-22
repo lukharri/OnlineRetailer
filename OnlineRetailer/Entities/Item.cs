@@ -28,6 +28,8 @@ namespace OnlineRetailer.Entities
         public string UPCCode { get; set; }
 
         [Required]
+        [MaxLength(60)]
+        [MinLength(40)]
         [DisplayName("Short Description")]
         public string ShortDescription { get; set; }
 
@@ -63,5 +65,6 @@ namespace OnlineRetailer.Entities
 
         [DisplayName("Daily Special")]
         public bool IsDailySpecial { get; set; }
+
     }
 }

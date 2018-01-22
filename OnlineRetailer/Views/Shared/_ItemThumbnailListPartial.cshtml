@@ -1,0 +1,47 @@
+﻿@model IEnumerable<OnlineRetailer.Areas.Admin.Models.ItemModel>
+
+@using OnlineRetailer.Areas.Admin.Models;
+
+<div class="toolbar item-toobar">
+
+</div>
+
+<ol>
+    @foreach (var item in Model)
+    {
+        <li class="item product item-product">
+            <div class="item-product-info" data-container="item-grid">
+                <a class="item-photo">
+                    <span class="item-photo-container">
+                        <span class="item-photo-wrapper">
+                            <img src="@Html.DisplayFor(m => m.ImageURL)"/>
+                        </span>
+                    </span>
+                </a>
+                <div class="item item-details details">
+                    <a>
+                        <span class="item-link item-brand-link">@Html.DisplayFor(m => m.Manufacturer)</span>
+                        <span class="item-link item-description-link">@Html.DisplayFor(m => m.ShortDescription)</span>
+                    </a>
+                    <div class="price-box">
+                        <span class="item-sale-price">@Html.DisplayFor(m => m.SalePrice)</span>
+                        <span class="item-list-price">@Html.DisplayFor(m => m.ListPrice)</span>
+                        <div class="item-savings">@Html.DisplayFor(m => m.Discount)</div>
+                    </div>
+                    <div class="item-actions">
+                        <div class="add-to-cart">
+                            @Html.Partial("_AddToCartButtonPartial")
+                        </div>
+                        <div>
+                            <!-- add compare button/view here-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    }
+</ol>
+
+<div class="toolbar item-toobar">
+
+</div>
