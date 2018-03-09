@@ -110,7 +110,10 @@ namespace OnlineRetailer.Areas.Admin.Controllers
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            return View(item);
+
+            // ItemModel model = new ItemModel(item);
+            var model = await item.Convert(db);
+            return View(model);
         }
 
 

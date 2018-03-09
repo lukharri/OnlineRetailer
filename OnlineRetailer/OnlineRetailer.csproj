@@ -207,6 +207,8 @@
     <Content Include="Content\Images\General\Banner.jpg" />
     <Content Include="Content\Images\General\Banner2.jpg" />
     <Content Include="Content\Images\General\Banner3.jpg" />
+    <Content Include="Content\Images\General\Banner4.jpg" />
+    <Content Include="Content\Images\General\Banner5.jpg" />
     <Content Include="Content\Images\General\EliniBannerLarge.jpg" />
     <Content Include="Content\Images\General\EliniBannerSmall.jpg" />
     <Content Include="Content\Images\General\InvictaBannerLarge.jpg" />

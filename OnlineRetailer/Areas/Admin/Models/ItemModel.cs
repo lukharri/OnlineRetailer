@@ -11,6 +11,30 @@ namespace OnlineRetailer.Areas.Admin.Models
 {
     public class ItemModel
     {
+        public ItemModel()
+        {
+
+        }
+
+        public ItemModel(Item item)
+        {
+            Id = item.Id;
+            ManufacturerId = item.ManufacturerId;
+            ModelNumber = item.ModelNumber;
+            SKU = item.SKU;
+            UPCCode = item.UPCCode;
+            ShortDescription = item.ShortDescription;
+            LongDescription = item.LongDescription;
+            ImageURL = item.ImageURL;
+            CategoryId = item.CategoryId;
+            ListPrice = item.ListPrice;
+            SalePrice = item.SalePrice;
+            Discount = item.Discount;
+            InStock = item.InStock;
+            Quantity = item.Quantity;
+            IsDailySpecial = item.IsDailySpecial;
+        }
+
         public int Id { get; set; }
 
         [Required]
